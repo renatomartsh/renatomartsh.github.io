@@ -1,4 +1,4 @@
-fetch('../courses.json')
+fetch('courses.json')
     .then(response => response.json())
     .then(data => {
 
@@ -6,15 +6,16 @@ fetch('../courses.json')
 
         data.forEach(course => {
 
-            const row = `
+            table.innerHTML += `
                 <tr>
                     <td>${course.name}</td>
                     <td>${course.platform}</td>
-                    <td>${course.year}</td>
+                    <td>${course.ano}</td>
                 </tr>
             `;
-
-            table.innerHTML += row;
         });
 
+    })
+    .catch(error => {
+        console.log(error);
     });
