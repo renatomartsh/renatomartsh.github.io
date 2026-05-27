@@ -48,6 +48,31 @@
             </div>
         </aside>
         <section id="about-container">
+		
+		<script>
+
+		const auth = sessionStorage.getItem("auth");
+
+		if(auth !== "true"){
+			window.location.href = "login.html";
+		}
+
+		// expira em 30 minutos
+		const loginTime = sessionStorage.getItem("loginTime");
+
+		const now = Date.now();
+
+		const THIRTY_MIN = 30 * 60 * 1000;
+
+		if(now - loginTime > THIRTY_MIN){
+
+			sessionStorage.clear();
+
+			window.location.href = "login.html";
+		}
+
+		</script>
+		
             <h1 id="name">Renato Martins</h1>
             <p id="title"><span class="highlight">Git</span></p>
 			
