@@ -19,7 +19,7 @@ async function login() {
         // salva horário login
         sessionStorage.setItem("loginTime", Date.now());
 
-        window.location.href = "dashboard.html";
+        window.location.href = "index.html";
 
     } else {
         alert("Login inválido");
