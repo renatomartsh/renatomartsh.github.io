@@ -8,6 +8,31 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <!--CSS do projeto -->
     <link rel="stylesheet" href="css/styles.css"
+
+<script>
+fetch('../courses.json')
+    .then(response => response.json())
+    .then(data => {
+
+        const table = document.getElementById('coursesTable');
+        alert('fff');
+        
+        data.forEach(course => {
+
+            const row = `
+                <tr>
+                    <td>${course.name}</td>
+                    <td>${course.platform}</td>
+                    <td>${course.year}</td>
+                </tr>
+            `;
+
+            table.innerHTML += row;
+        });
+
+    });
+</script>
+    
 </head>
 <body>
 
@@ -59,29 +84,6 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/courses.js"></script>
-
-<script>
-fetch('../courses.json')
-    .then(response => response.json())
-    .then(data => {
-        alert('fff');
-        const table = document.getElementById('coursesTable');
-
-        data.forEach(course => {
-
-            const row = `
-                <tr>
-                    <td>${course.name}</td>
-                    <td>${course.platform}</td>
-                    <td>${course.year}</td>
-                </tr>
-            `;
-
-            table.innerHTML += row;
-        });
-
-    });
-</script>
 
 </body>
 </html>
