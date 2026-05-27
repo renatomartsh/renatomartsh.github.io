@@ -1,16 +1,20 @@
-  {
-    "name": "Visual Studio Code Produtividade Absoluta",
-    "platform": "Coursera",
-    "year": "2025"
-  },
-  {
-    "name": "Linux e Distribuição CentoOS para iniciantes",
-    "platform": "Udemy",
-    "year": "2026"
-  },
-    {
-    "name": "Clean Architecture Essencial - ASP.NET Core com C#	",
-    "platform": "Udemy",
-    "year": "2026"
-  }
-]
+fetch('../courses.json')
+    .then(response => response.json())
+    .then(data => {
+
+        const table = document.getElementById('coursesTable');
+
+        data.forEach(course => {
+
+            const row = `
+                <tr>
+                    <td>${course.name}</td>
+                    <td>${course.platform}</td>
+                    <td>${course.year}</td>
+                </tr>
+            `;
+
+            table.innerHTML += row;
+        });
+
+    });
