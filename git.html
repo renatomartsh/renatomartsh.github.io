@@ -26,9 +26,21 @@
     <!--CSS do projeto -->
     <link rel="stylesheet" href="css/styles.css"
 </head>
-<body>
+<body">
 
     <main id="container">
+
+        <script>
+
+        window.addEventListener("load", () => {
+
+            checkAuth();
+            checkSessionTimeout();
+
+        });
+
+        </script>
+
         <aside id="bio-container">
             <select id="languageSwitcher">
                 <option value="pt">Português</option>
@@ -48,31 +60,7 @@
             </div>
         </aside>
         <section id="about-container">
-		
-		<script>
 
-		const auth = sessionStorage.getItem("auth");
-
-		if(auth !== "true"){
-			window.location.href = "login.html";
-		}
-
-		// expira em 30 minutos
-		const loginTime = sessionStorage.getItem("loginTime");
-
-		const now = Date.now();
-
-		const THIRTY_MIN = 30 * 60 * 1000;
-
-		if(now - loginTime > THIRTY_MIN){
-
-			sessionStorage.clear();
-
-			window.location.href = "login.html";
-		}
-
-		</script>
-		
             <h1 id="name">Renato Martins</h1>
             <p id="title"><span class="highlight">Git</span></p>
 			
@@ -89,10 +77,9 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="js/i18n.js"></script>
 </body>
-</html>
+</html>          
 
-                <option value="de">Deutsch</option>
-            </select>            
+
             <h2>Renato Martins</h2>
             <img id="bio-image" src="img/my_nick.png" alt="Renato Martins">
             <p data-i18n="name">Renato Martins, Analista de Sistemas</p>
@@ -112,10 +99,13 @@
              
         </section>
     </main>                 
-          
+
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/logoff.js"></script>
+<script src="js/checkAuth.js"></script>
+<script src="js/checkSessionTimeout.js"></script>
+
 </body>
 </html>

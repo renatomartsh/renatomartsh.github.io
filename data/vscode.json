@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "groupy": "Settings",
+    "comando": "Compact Foders",
+	"description": "ajusta para que as pastas nao mostre como caminho mas a forma comum, pode-se editar no parte visual ou no arquivo Settings.json direto"
+  },
+    {
+    "id": 2,
+    "groupy": "shortcuts",
+    "comando": "Shift + ALT + Down",
+	"description": "copia e cola para baixo com seta"
+  },
+  {
+    "id": 3,
+    "groupy": "shortcuts",
+    "comando": "Shift + ALT + Up",
+	"description": "copia e cola para cima com seta"
+  },
+  {
+    "id": 3,
+    "groupy": "KeyHot",
+    "comando": "CTRL+C e CTRL+V ",
+	"description": "copia e cola para baixo"
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "groupy": "CLI",
+    "comando": "py --version",
+	"description": "mostra a versão do python",
+	"example":""
+  },{
+    "id": 2,
+    "groupy": "CLI",
+    "comando": "python --version",
+	"description": "mostra a versão do python",
+	"example":""
+  },
+  {
+    "id": 3,
+    "groupy": "CLI",
+    "comando": "python -m venv venv",
+	"description": "cria o ambiente virtual",
+	"example":""
+  },
+    {
+    "id": 4,
+    "groupy": "CLI",
+    "comando": "CTRL + /",
+	"description": "comenta um bloco de linhas",
+	"example":""
+  },
+    {
+    "id": 5,
+    "groupy": "CLI",
+    "comando": "...",
+	"description": "esse é o placeholder é tipo o pass se ainda não sabe o que coloar não vai gerar erro",
+	"example":""	
+  },
+    {
+    "id": 6,
+    "groupy": "strings",
+	"subgroupy": "f-strings",
+    "comando": "f",
+	"description": "formatação de string em uma variavel",
+	"example":"linha_1 = f'{nome} tem {altura:.2f} de altura,'"	
+  },
+    {
+    "id": 6,
+    "groupy": "strings",
+	"subgroupy": "f-strings",
+    "comando": "format",
+	"description": "formatação de string com parametros",
+	"example":"formato = 'a={} b={} c={}'.format(a,b,c)"	
+  },
+    {
+    "id": 7,
+    "groupy": "strings",
+	"subgroupy": "f-strings",
+    "comando": "format",
+	"description": "formatação de string com parametros informado a posição",
+	"example":"'a={0} b={1} a={0} a={0} b={1} c={2}'.format(a,b,c)"	
+  },
+    {
+    "id": 8,
+    "groupy": "strings",
+	"subgroupy": "f-strings",
+    "comando": "format",
+	"description": "formatação de string com parametros nomeados",
+	"example":"'parametro_nomeado = 'a={} b={} c={valor:.2f}'.format(a,b,valor=c)"	
+  },
+    {
+    "id": 9,
+    "groupy": "io",
+	"subgroupy": "inputoutput",
+    "comando": "input",
+	"description": "fazer a entrada de dados via cmd",
+	"example":"numero = input('Digite um numero: ')"	
+  },
+    {
+    "id": 10,
+    "groupy": "debug",
+	"subgroupy": "configuracao",
+    "comando": "Glyph Margin",
+	"description": "ativa para marcar o ponto de parada do debug",
+	"example":""	
+  },
+    {
+    "id": 10,
+    "groupy": "CLI",
+	"subgroupy": "interativo",
+    "comando": "-i",
+	"description": "carrega um arquivo no shell interativo do python",
+	"example":"python -i aula19.py"	
+  },
+    {
+    "id": 10,
+    "groupy": "operadores",
+	"subgroupy": "logico",
+    "comando": "in",
+	"description": "verifica se existe parte de uma string em uma variavel",
+	"example":"print('nato' in nome)"	
+  },
+    {
+    "id": 10,
+    "groupy": "string",
+	"subgroupy": "interpolacao",
+    "comando": "%",
+	"description": "faz a interpolação de variaveis na string,
+	"example":"variavel = '%s, o preço é R$%.2f' % (nome, preco)"	
+  },
+    {
+    "id": 10,
+    "groupy": "string",
+	"subgroupy": "f-strings",
+    "comando": ">",
+	"description": "espaços vazios a direita,
+	"example":"print(f'{variavel: >10}')"	
+  },
+    {
+    "id": 10,
+    "groupy": "string",
+	"subgroupy": "f-strings",
+    "comando": ">",
+	"description": "espaços vazios a esquerda,
+	"example":"print(f'{variavel: >10}')"	
+  },
+    {
+    "id": 10,
+    "groupy": "string",
+	"subgroupy": "f-strings",
+    "comando": ">",
+	"description": "espaços vazios ao centro,
+	"example":"print(f'{variavel: ^10}')"	
+  },
+    {
+    "id": 10,
+    "groupy": "numeros",
+	"subgroupy": "validacao",
+    "comando": "isdigit",
+	"description": "valida se o valor é numerico",
+	"example":"variavel_valor.isdigit()"	
+  }
+  
+]

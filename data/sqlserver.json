@@ -1,0 +1,7 @@
+[
+  {
+    "id": 1,
+    "groupy": "DML",
+    "comando": "SELECT COUNT(*) AS QuantidadeCampos FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'ESTABELECIMENTO'"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "groupy": "CLI",
+    "comando": "Get-ExecutionPolicy",
+	"description": "Não pode estar Restricted, precisar ser Unrestricted"
+  },{
+    "id": 2,
+    "groupy": "CLI",
+    "comando": "python --version'"
+  }
+]

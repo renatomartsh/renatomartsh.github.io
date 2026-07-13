@@ -25,3 +25,11 @@ async function login() {
         alert("Login inválido");
     }
 }
+
+function logout(){
+    alert('logout');
+    sessionStorage.clear();
+
+    window.location.href = "login.html";
+}
+

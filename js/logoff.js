@@ -1,6 +1,4 @@
 function logout(){
-    alert('encerrar');
     sessionStorage.clear();
-
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 }
